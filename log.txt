@@ -1,0 +1,342 @@
+====================[ Build | f2fs_tools | Debug ]==============================
+"C:\Program Files\JetBrains\CLion 2024.1\bin\cmake\win\x64\bin\cmake.exe" --build C:\Users\Professional\CLionProjects\f2fs_tools\cmake-build-debug --target f2fs_tools -j 3
+[1/1] Linking C executable f2fs_tools.exe
+FAILED: f2fs_tools.exe
+C:\WINDOWS\system32\cmd.exe /C "cd . && C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\gcc.exe -g  CMakeFiles/f2fs_tools.dir/src/compress.c.obj CMakeFiles/f2fs_tools.dir/src/defrag.c.obj CMakeFiles/f2fs_tools.dir/src/dict.c.obj CMakeFiles/f2fs_tools.dir/src/dir.c.obj CMakeFiles/f2fs_tools.dir/src/dump.c.obj CMakeFiles/f2fs_tools.dir/src/f2fs_format.c.obj CMakeFiles/f2fs_tools.dir/src/f2fs_format_utils.c.obj CMakeFiles/f2fs_tools.dir/src/fsck.c.obj CMakeFiles/f2fs_tools.dir/src/inject.c.obj CMakeFiles/f2fs_tools.dir/src/libf2fs.c.obj CMakeFiles/f2fs_tools.dir/src/libf2fs_zoned.c.obj CMakeFiles/f2fs_tools.dir/src/main.c.obj CMakeFiles/f2fs_tools.dir/src/mkquota.c.obj CMakeFiles/f2fs_tools.dir/src/mount.c.obj CMakeFiles/f2fs_tools.dir/src/nls_utf8.c.obj CMakeFiles/f2fs_tools.dir/src/node.c.obj CMakeFiles/f2fs_tools.dir/src/quotaio.c.obj CMakeFiles/f2fs_tools.dir/src/quotaio_tree.c.obj CMakeFiles/f2fs_tools.dir/src/quotaio_v2.c.obj CMakeFiles/f2fs_tools.dir/src/resize.c.obj CMakeFiles/f2fs_tools.dir/src/segment.c.obj CMakeFiles/f2fs_tools.dir/src/sload.c.obj CMakeFiles/f2fs_tools.dir/src/xattr.c.obj -o f2fs_tools.exe -Wl,--out-implib,libf2fs_tools.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: CMakeFiles/f2fs_tools.dir/src/compress.c.obj:compress.c:(.rdata$.refptr.c[.refptr.c]+0x0): undefined reference to `c'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: CMakeFiles/f2fs_tools.dir/src/defrag.c.obj: in function `migrate_block':
+C:/Users/Professional/CLionProjects/f2fs_tools/src/defrag.c:23: undefined reference to `dev_read_block'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: C:/Users/Professional/CLionProjects/f2fs_tools/src/defrag.c:29: undefined reference to `f2fs_io_type_to_rw_hint'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: C:/Users/Professional/CLionProjects/f2fs_tools/src/defrag.c:29: undefined reference to `dev_write_block'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: CMakeFiles/f2fs_tools.dir/src/dir.c.obj: in function `find_in_level':
+C:/Users/Professional/CLionProjects/f2fs_tools/src/dir.c:148: undefined reference to `dev_read_block'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: CMakeFiles/f2fs_tools.dir/src/dir.c.obj: in function `f2fs_add_link':
+C:/Users/Professional/CLionProjects/f2fs_tools/src/dir.c:284: undefined reference to `dev_read_block'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: C:/Users/Professional/CLionProjects/f2fs_tools/src/dir.c:303: undefined reference to `f2fs_io_type_to_rw_hint'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: C:/Users/Professional/CLionProjects/f2fs_tools/src/dir.c:303: undefined reference to `dev_write_block'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: C:/Users/Professional/CLionProjects/f2fs_tools/src/dir.c:315: undefined reference to `f2fs_io_type_to_rw_hint'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: C:/Users/Professional/CLionProjects/f2fs_tools/src/dir.c:315: undefined reference to `dev_write_block'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: C:/Users/Professional/CLionProjects/f2fs_tools/src/dir.c:348: undefined reference to `f2fs_io_type_to_rw_hint'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: C:/Users/Professional/CLionProjects/f2fs_tools/src/dir.c:348: undefined reference to `dev_write_block'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: CMakeFiles/f2fs_tools.dir/src/dir.c.obj: in function `make_empty_dir':
+C:/Users/Professional/CLionProjects/f2fs_tools/src/dir.c:400: undefined reference to `f2fs_io_type_to_rw_hint'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: C:/Users/Professional/CLionProjects/f2fs_tools/src/dir.c:400: undefined reference to `dev_write_block'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: CMakeFiles/f2fs_tools.dir/src/dir.c.obj: in function `page_symlink':
+C:/Users/Professional/CLionProjects/f2fs_tools/src/dir.c:437: undefined reference to `f2fs_io_type_to_rw_hint'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: C:/Users/Professional/CLionProjects/f2fs_tools/src/dir.c:437: undefined reference to `dev_write_block'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: CMakeFiles/f2fs_tools.dir/src/dir.c.obj: in function `init_inode_block':
+C:/Users/Professional/CLionProjects/f2fs_tools/src/dir.c:570: undefined reference to `S_ISLNK'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: CMakeFiles/f2fs_tools.dir/src/dir.c.obj: in function `convert_inline_dentry':
+C:/Users/Professional/CLionProjects/f2fs_tools/src/dir.c:632: undefined reference to `f2fs_io_type_to_rw_hint'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: C:/Users/Professional/CLionProjects/f2fs_tools/src/dir.c:632: undefined reference to `dev_write_block'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: CMakeFiles/f2fs_tools.dir/src/dir.c.obj: in function `f2fs_create':
+C:/Users/Professional/CLionProjects/f2fs_tools/src/dir.c:739: undefined reference to `dev_read_block'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: C:/Users/Professional/CLionProjects/f2fs_tools/src/dir.c:811: undefined reference to `dev_read_block'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: C:/Users/Professional/CLionProjects/f2fs_tools/src/dir.c:833: undefined reference to `f2fs_io_type_to_rw_hint'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: C:/Users/Professional/CLionProjects/f2fs_tools/src/dir.c:833: undefined reference to `dev_write_block'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: CMakeFiles/f2fs_tools.dir/src/dir.c.obj: in function `f2fs_find_path':
+C:/Users/Professional/CLionProjects/f2fs_tools/src/dir.c:892: undefined reference to `dev_read_block'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: CMakeFiles/f2fs_tools.dir/src/dump.c.obj: in function `nat_dump':
+C:/Users/Professional/CLionProjects/f2fs_tools/src/dump.c:70: undefined reference to `dev_read_block'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: C:/Users/Professional/CLionProjects/f2fs_tools/src/dump.c:85: undefined reference to `dev_read_block'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: C:/Users/Professional/CLionProjects/f2fs_tools/src/dump.c:92: undefined reference to `dev_read_block'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: CMakeFiles/f2fs_tools.dir/src/dump.c.obj: in function `dump_data_blk':
+C:/Users/Professional/CLionProjects/f2fs_tools/src/dump.c:317: undefined reference to `dev_read_block'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: C:/Users/Professional/CLionProjects/f2fs_tools/src/dump.c:332: undefined reference to `dev_write_dump'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: CMakeFiles/f2fs_tools.dir/src/dump.c.obj: in function `dump_node_blk':
+C:/Users/Professional/CLionProjects/f2fs_tools/src/dump.c:368: undefined reference to `dev_read_block'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: CMakeFiles/f2fs_tools.dir/src/dump.c.obj: in function `dump_inode_blk':
+C:/Users/Professional/CLionProjects/f2fs_tools/src/dump.c:510: undefined reference to `dev_write_dump'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: CMakeFiles/f2fs_tools.dir/src/dump.c.obj: in function `dump_filesystem':
+C:/Users/Professional/CLionProjects/f2fs_tools/src/dump.c:662: undefined reference to `S_ISLNK'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: CMakeFiles/f2fs_tools.dir/src/dump.c.obj: in function `dump_node_scan_disk':
+C:/Users/Professional/CLionProjects/f2fs_tools/src/dump.c:771: undefined reference to `dev_read_block'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: CMakeFiles/f2fs_tools.dir/src/dump.c.obj: in function `dump_node':
+C:/Users/Professional/CLionProjects/f2fs_tools/src/dump.c:806: undefined reference to `dev_read_block'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: CMakeFiles/f2fs_tools.dir/src/dump.c.obj: in function `dump_node_from_blkaddr':
+C:/Users/Professional/CLionProjects/f2fs_tools/src/dump.c:838: undefined reference to `dev_read_block'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: CMakeFiles/f2fs_tools.dir/src/dump.c.obj: in function `dump_data_offset':
+C:/Users/Professional/CLionProjects/f2fs_tools/src/dump.c:881: undefined reference to `dev_read_block'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: CMakeFiles/f2fs_tools.dir/src/dump.c.obj: in function `dump_node_offset':
+C:/Users/Professional/CLionProjects/f2fs_tools/src/dump.c:903: undefined reference to `dev_read_block'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: CMakeFiles/f2fs_tools.dir/src/dump.c.obj:C:/Users/Professional/CLionProjects/f2fs_tools/src/dump.c:918: more undefined references to `dev_read_block' follow
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: CMakeFiles/f2fs_tools.dir/src/f2fs_format.c.obj: in function `f2fs_prepare_super_block':
+C:/Users/Professional/CLionProjects/f2fs_tools/src/f2fs_format.c:663: undefined reference to `dev_read_version'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: CMakeFiles/f2fs_tools.dir/src/f2fs_format.c.obj: in function `f2fs_init_sit_area':
+C:/Users/Professional/CLionProjects/f2fs_tools/src/f2fs_format.c:716: undefined reference to `dev_fill'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: CMakeFiles/f2fs_tools.dir/src/f2fs_format.c.obj: in function `f2fs_init_nat_area':
+C:/Users/Professional/CLionProjects/f2fs_tools/src/f2fs_format.c:750: undefined reference to `dev_fill'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: CMakeFiles/f2fs_tools.dir/src/f2fs_format.c.obj: in function `f2fs_write_check_point_pack':
+C:/Users/Professional/CLionProjects/f2fs_tools/src/f2fs_format.c:940: undefined reference to `dev_write_block'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: C:/Users/Professional/CLionProjects/f2fs_tools/src/f2fs_format.c:947: undefined reference to `dev_fill_block'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: C:/Users/Professional/CLionProjects/f2fs_tools/src/f2fs_format.c:1028: undefined reference to `dev_write_block'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: C:/Users/Professional/CLionProjects/f2fs_tools/src/f2fs_format.c:1042: undefined reference to `dev_write_block'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: C:/Users/Professional/CLionProjects/f2fs_tools/src/f2fs_format.c:1054: undefined reference to `dev_write_block'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: C:/Users/Professional/CLionProjects/f2fs_tools/src/f2fs_format.c:1068: undefined reference to `dev_write_block'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: C:/Users/Professional/CLionProjects/f2fs_tools/src/f2fs_format.c:1076: undefined reference to `dev_write_block'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: CMakeFiles/f2fs_tools.dir/src/f2fs_format.c.obj:C:/Users/Professional/CLionProjects/f2fs_tools/src/f2fs_format.c:1098: more undefined references to `dev_write_block' follow
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: CMakeFiles/f2fs_tools.dir/src/f2fs_format.c.obj: in function `f2fs_write_check_point_pack':
+C:/Users/Professional/CLionProjects/f2fs_tools/src/f2fs_format.c:1125: undefined reference to `dev_fill_block'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: C:/Users/Professional/CLionProjects/f2fs_tools/src/f2fs_format.c:1137: undefined reference to `dev_write_block'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: CMakeFiles/f2fs_tools.dir/src/f2fs_format.c.obj: in function `f2fs_write_super_block':
+C:/Users/Professional/CLionProjects/f2fs_tools/src/f2fs_format.c:1171: undefined reference to `dev_write_block'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: CMakeFiles/f2fs_tools.dir/src/f2fs_format.c.obj: in function `f2fs_add_default_dentry_root':
+C:/Users/Professional/CLionProjects/f2fs_tools/src/f2fs_format.c:1365: undefined reference to `f2fs_io_type_to_rw_hint'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: C:/Users/Professional/CLionProjects/f2fs_tools/src/f2fs_format.c:1365: undefined reference to `dev_write_block'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: CMakeFiles/f2fs_tools.dir/src/f2fs_format.c.obj: in function `f2fs_write_root_inode':
+C:/Users/Professional/CLionProjects/f2fs_tools/src/f2fs_format.c:1411: undefined reference to `f2fs_io_type_to_rw_hint'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: CMakeFiles/f2fs_tools.dir/src/f2fs_format.c.obj: in function `f2fs_write_default_quota':
+C:/Users/Professional/CLionProjects/f2fs_tools/src/f2fs_format.c:1491: undefined reference to `f2fs_io_type_to_rw_hint'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: C:/Users/Professional/CLionProjects/f2fs_tools/src/f2fs_format.c:1491: undefined reference to `dev_write_block'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: CMakeFiles/f2fs_tools.dir/src/f2fs_format.c.obj: in function `f2fs_write_qf_inode':
+C:/Users/Professional/CLionProjects/f2fs_tools/src/f2fs_format.c:1554: undefined reference to `f2fs_io_type_to_rw_hint'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: CMakeFiles/f2fs_tools.dir/src/f2fs_format.c.obj: in function `f2fs_update_nat_default':
+C:/Users/Professional/CLionProjects/f2fs_tools/src/f2fs_format.c:1592: undefined reference to `dev_write_block'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: CMakeFiles/f2fs_tools.dir/src/f2fs_format.c.obj: in function `f2fs_add_default_dentry_lpf':
+C:/Users/Professional/CLionProjects/f2fs_tools/src/f2fs_format.c:1621: undefined reference to `f2fs_io_type_to_rw_hint'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: C:/Users/Professional/CLionProjects/f2fs_tools/src/f2fs_format.c:1621: undefined reference to `dev_write_block'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: CMakeFiles/f2fs_tools.dir/src/f2fs_format.c.obj: in function `f2fs_write_lpf_inode':
+C:/Users/Professional/CLionProjects/f2fs_tools/src/f2fs_format.c:1669: undefined reference to `f2fs_io_type_to_rw_hint'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: CMakeFiles/f2fs_tools.dir/src/f2fs_format.c.obj: in function `allocate_blocks_for_aliased_device':
+C:/Users/Professional/CLionProjects/f2fs_tools/src/f2fs_format.c:1703: undefined reference to `dev_read_block'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: C:/Users/Professional/CLionProjects/f2fs_tools/src/f2fs_format.c:1709: undefined reference to `f2fs_io_type_to_rw_hint'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: C:/Users/Professional/CLionProjects/f2fs_tools/src/f2fs_format.c:1709: undefined reference to `dev_write_block'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: CMakeFiles/f2fs_tools.dir/src/f2fs_format.c.obj: in function `f2fs_write_alias_inodes':
+C:/Users/Professional/CLionProjects/f2fs_tools/src/f2fs_format.c:1766: undefined reference to `f2fs_io_type_to_rw_hint'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: CMakeFiles/f2fs_tools.dir/src/fsck.c.obj: in function `is_valid_ssa_node_blk':
+C:/Users/Professional/CLionProjects/f2fs_tools/src/fsck.c:219: undefined reference to `dev_write_block'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: CMakeFiles/f2fs_tools.dir/src/fsck.c.obj: in function `is_valid_summary':
+C:/Users/Professional/CLionProjects/f2fs_tools/src/fsck.c:251: undefined reference to `dev_read_block'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: CMakeFiles/f2fs_tools.dir/src/fsck.c.obj: in function `is_valid_ssa_data_blk':
+C:/Users/Professional/CLionProjects/f2fs_tools/src/fsck.c:353: undefined reference to `dev_write_block'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: CMakeFiles/f2fs_tools.dir/src/fsck.c.obj: in function `__check_inode_mode':
+C:/Users/Professional/CLionProjects/f2fs_tools/src/fsck.c:368: undefined reference to `S_ISLNK'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: C:/Users/Professional/CLionProjects/f2fs_tools/src/fsck.c:370: undefined reference to `S_ISSOCK'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: C:/Users/Professional/CLionProjects/f2fs_tools/src/fsck.c:376: undefined reference to `S_ISLNK'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: C:/Users/Professional/CLionProjects/f2fs_tools/src/fsck.c:388: undefined reference to `S_ISSOCK'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: CMakeFiles/f2fs_tools.dir/src/fsck.c.obj: in function `sanity_check_nid':
+C:/Users/Professional/CLionProjects/f2fs_tools/src/fsck.c:443: undefined reference to `dev_read_block'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: CMakeFiles/f2fs_tools.dir/src/fsck.c.obj: in function `fsck_chk_root_inode':
+C:/Users/Professional/CLionProjects/f2fs_tools/src/fsck.c:663: undefined reference to `dev_readahead'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: C:/Users/Professional/CLionProjects/f2fs_tools/src/fsck.c:670: undefined reference to `dev_read_block'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: CMakeFiles/f2fs_tools.dir/src/fsck.c.obj: in function `fsck_reada_node_block':
+C:/Users/Professional/CLionProjects/f2fs_tools/src/fsck.c:808: undefined reference to `dev_reada_block'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: CMakeFiles/f2fs_tools.dir/src/fsck.c.obj: in function `__chk_dentries':
+C:/Users/Professional/CLionProjects/f2fs_tools/src/fsck.c:1863: undefined reference to `dev_reada_block'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: CMakeFiles/f2fs_tools.dir/src/fsck.c.obj: in function `fsck_chk_dentry_blk':
+C:/Users/Professional/CLionProjects/f2fs_tools/src/fsck.c:2088: undefined reference to `dev_read_block'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: CMakeFiles/f2fs_tools.dir/src/fsck.c.obj: in function `fsck_chk_orphan_node':
+C:/Users/Professional/CLionProjects/f2fs_tools/src/fsck.c:2195: undefined reference to `dev_read_block'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: C:/Users/Professional/CLionProjects/f2fs_tools/src/fsck.c:2236: undefined reference to `dev_write_block'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: CMakeFiles/f2fs_tools.dir/src/fsck.c.obj: in function `fix_checkpoint':
+C:/Users/Professional/CLionProjects/f2fs_tools/src/fsck.c:2653: undefined reference to `dev_write_block'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: C:/Users/Professional/CLionProjects/f2fs_tools/src/fsck.c:2657: undefined reference to `dev_write_block'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: C:/Users/Professional/CLionProjects/f2fs_tools/src/fsck.c:2671: undefined reference to `dev_write_block'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: C:/Users/Professional/CLionProjects/f2fs_tools/src/fsck.c:2680: undefined reference to `f2fs_fsync_device'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: C:/Users/Professional/CLionProjects/f2fs_tools/src/fsck.c:2683: undefined reference to `dev_write_block'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: C:/Users/Professional/CLionProjects/f2fs_tools/src/fsck.c:2686: undefined reference to `f2fs_fsync_device'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: CMakeFiles/f2fs_tools.dir/src/fsck.c.obj: in function `fsck_get_lpf':
+C:/Users/Professional/CLionProjects/f2fs_tools/src/fsck.c:2904: undefined reference to `dev_read_block'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: C:/Users/Professional/CLionProjects/f2fs_tools/src/fsck.c:2911: undefined reference to `dev_read_block'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: C:/Users/Professional/CLionProjects/f2fs_tools/src/fsck.c:2938: undefined reference to `getuid'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: C:/Users/Professional/CLionProjects/f2fs_tools/src/fsck.c:2939: undefined reference to `getgid'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: C:/Users/Professional/CLionProjects/f2fs_tools/src/fsck.c:2949: undefined reference to `dev_read_block'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: CMakeFiles/f2fs_tools.dir/src/fsck.c.obj: in function `fsck_disconnect_file_dnode':
+C:/Users/Professional/CLionProjects/f2fs_tools/src/fsck.c:3061: undefined reference to `dev_read_block'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: CMakeFiles/f2fs_tools.dir/src/fsck.c.obj: in function `fsck_disconnect_file_idnode':
+C:/Users/Professional/CLionProjects/f2fs_tools/src/fsck.c:3096: undefined reference to `dev_read_block'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: CMakeFiles/f2fs_tools.dir/src/fsck.c.obj: in function `fsck_disconnect_file_didnode':
+C:/Users/Professional/CLionProjects/f2fs_tools/src/fsck.c:3128: undefined reference to `dev_read_block'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: CMakeFiles/f2fs_tools.dir/src/fsck.c.obj: in function `fsck_disconnect_file':
+C:/Users/Professional/CLionProjects/f2fs_tools/src/fsck.c:3160: undefined reference to `dev_read_block'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: CMakeFiles/f2fs_tools.dir/src/fsck.c.obj:C:/Users/Professional/CLionProjects/f2fs_tools/src/fsck.c:3259: more undefined references to `dev_read_block' follow
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: CMakeFiles/f2fs_tools.dir/src/fsck.c.obj: in function `fsck_verify':
+C:/Users/Professional/CLionProjects/f2fs_tools/src/fsck.c:3733: undefined reference to `dev_write_block'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: CMakeFiles/f2fs_tools.dir/src/inject.c.obj: in function `inject_sb':
+C:/Users/Professional/CLionProjects/f2fs_tools/src/inject.c:381: undefined reference to `dev_read_block'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: CMakeFiles/f2fs_tools.dir/src/inject.c.obj: in function `inject_cp':
+C:/Users/Professional/CLionProjects/f2fs_tools/src/inject.c:459: undefined reference to `dev_read_block'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: CMakeFiles/f2fs_tools.dir/src/inject.c.obj: in function `inject_nat':
+C:/Users/Professional/CLionProjects/f2fs_tools/src/inject.c:571: undefined reference to `dev_read_block'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: C:/Users/Professional/CLionProjects/f2fs_tools/src/inject.c:599: undefined reference to `dev_write_block'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: CMakeFiles/f2fs_tools.dir/src/inject.c.obj: in function `inject_ssa':
+C:/Users/Professional/CLionProjects/f2fs_tools/src/inject.c:758: undefined reference to `dev_write_block'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: CMakeFiles/f2fs_tools.dir/src/inject.c.obj: in function `inject_node':
+C:/Users/Professional/CLionProjects/f2fs_tools/src/inject.c:884: undefined reference to `dev_read_block'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: CMakeFiles/f2fs_tools.dir/src/inject.c.obj: in function `inject_dentry':
+C:/Users/Professional/CLionProjects/f2fs_tools/src/inject.c:980: undefined reference to `dev_read_block'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: C:/Users/Professional/CLionProjects/f2fs_tools/src/inject.c:986: undefined reference to `dev_read_block'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: C:/Users/Professional/CLionProjects/f2fs_tools/src/inject.c:1029: undefined reference to `dev_read_block'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: CMakeFiles/f2fs_tools.dir/src/libf2fs.c.obj: in function `write_inode':
+C:/Users/Professional/CLionProjects/f2fs_tools/src/libf2fs.c:611: undefined reference to `dev_write_block'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: CMakeFiles/f2fs_tools.dir/src/libf2fs.c.obj: in function `f2fs_init_configuration':
+C:/Users/Professional/CLionProjects/f2fs_tools/src/libf2fs.c:720: undefined reference to `getuid'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: C:/Users/Professional/CLionProjects/f2fs_tools/src/libf2fs.c:721: undefined reference to `getgid'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: CMakeFiles/f2fs_tools.dir/src/libf2fs.c.obj: in function `get_device_info':
+C:/Users/Professional/CLionProjects/f2fs_tools/src/libf2fs.c:1278: undefined reference to `f2fs_init_sparse_file'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: CMakeFiles/f2fs_tools.dir/src/main.c.obj: in function `main':
+C:/Users/Professional/CLionProjects/f2fs_tools/src/main.c:397: undefined reference to `f2fs_finalize_device'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: C:/Users/Professional/CLionProjects/f2fs_tools/src/main.c:409: undefined reference to `f2fs_release_sparse_resource'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: CMakeFiles/f2fs_tools.dir/src/mount.c.obj: in function `ADDRS_PER_PAGE':
+C:/Users/Professional/CLionProjects/f2fs_tools/src/node.h:42: undefined reference to `dev_read_block'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: CMakeFiles/f2fs_tools.dir/src/mount.c.obj: in function `f2fs_ra_meta_pages':
+C:/Users/Professional/CLionProjects/f2fs_tools/src/mount.c:860: undefined reference to `dev_readahead'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: C:/Users/Professional/CLionProjects/f2fs_tools/src/mount.c:866: undefined reference to `dev_readahead'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: CMakeFiles/f2fs_tools.dir/src/mount.c.obj: in function `update_superblock':
+C:/Users/Professional/CLionProjects/f2fs_tools/src/mount.c:892: undefined reference to `dev_write_block'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: CMakeFiles/f2fs_tools.dir/src/mount.c.obj: in function `validate_super_block':
+C:/Users/Professional/CLionProjects/f2fs_tools/src/mount.c:1152: undefined reference to `dev_read_block'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: C:/Users/Professional/CLionProjects/f2fs_tools/src/mount.c:1161: undefined reference to `dev_read_version'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: CMakeFiles/f2fs_tools.dir/src/mount.c.obj: in function `get_checkpoint_version':
+C:/Users/Professional/CLionProjects/f2fs_tools/src/mount.c:1295: undefined reference to `dev_read_block'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: CMakeFiles/f2fs_tools.dir/src/mount.c.obj: in function `get_valid_checkpoint':
+C:/Users/Professional/CLionProjects/f2fs_tools/src/mount.c:1410: undefined reference to `dev_read_block'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: CMakeFiles/f2fs_tools.dir/src/mount.c.obj: in function `f2fs_late_init_nid_bitmap':
+C:/Users/Professional/CLionProjects/f2fs_tools/src/mount.c:1691: undefined reference to `dev_read_block'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: CMakeFiles/f2fs_tools.dir/src/mount.c.obj: in function `write_nat_bits':
+C:/Users/Professional/CLionProjects/f2fs_tools/src/mount.c:1764: undefined reference to `dev_read_block'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: C:/Users/Professional/CLionProjects/f2fs_tools/src/mount.c:1786: undefined reference to `dev_write_block'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: CMakeFiles/f2fs_tools.dir/src/mount.c.obj: in function `check_nat_bits':
+C:/Users/Professional/CLionProjects/f2fs_tools/src/mount.c:1821: undefined reference to `dev_read_block'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: CMakeFiles/f2fs_tools.dir/src/mount.c.obj: in function `read_compacted_summaries':
+C:/Users/Professional/CLionProjects/f2fs_tools/src/mount.c:2031: undefined reference to `dev_read_block'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: C:/Users/Professional/CLionProjects/f2fs_tools/src/mount.c:2064: undefined reference to `dev_read_block'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: CMakeFiles/f2fs_tools.dir/src/mount.c.obj: in function `restore_node_summary':
+C:/Users/Professional/CLionProjects/f2fs_tools/src/mount.c:2089: undefined reference to `dev_read_block'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: CMakeFiles/f2fs_tools.dir/src/mount.c.obj: in function `read_normal_summaries':
+C:/Users/Professional/CLionProjects/f2fs_tools/src/mount.c:2124: undefined reference to `dev_read_block'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: CMakeFiles/f2fs_tools.dir/src/mount.c.obj: in function `update_sum_entry':
+C:/Users/Professional/CLionProjects/f2fs_tools/src/mount.c:2159: undefined reference to `dev_write_block'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: CMakeFiles/f2fs_tools.dir/src/mount.c.obj: in function `get_current_sit_page':
+C:/Users/Professional/CLionProjects/f2fs_tools/src/mount.c:2259: undefined reference to `dev_read_block'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: CMakeFiles/f2fs_tools.dir/src/mount.c.obj: in function `rewrite_current_sit_page':
+C:/Users/Professional/CLionProjects/f2fs_tools/src/mount.c:2267: undefined reference to `dev_write_block'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: CMakeFiles/f2fs_tools.dir/src/mount.c.obj: in function `get_sum_block':
+C:/Users/Professional/CLionProjects/f2fs_tools/src/mount.c:2397: undefined reference to `dev_read_block'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: CMakeFiles/f2fs_tools.dir/src/mount.c.obj: in function `get_nat_entry':
+C:/Users/Professional/CLionProjects/f2fs_tools/src/mount.c:2444: undefined reference to `dev_read_block'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: CMakeFiles/f2fs_tools.dir/src/mount.c.obj: in function `update_data_blkaddr':
+C:/Users/Professional/CLionProjects/f2fs_tools/src/mount.c:2467: undefined reference to `dev_read_block'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: C:/Users/Professional/CLionProjects/f2fs_tools/src/mount.c:2501: undefined reference to `dev_read_block'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: CMakeFiles/f2fs_tools.dir/src/mount.c.obj: in function `update_nat_blkaddr':
+C:/Users/Professional/CLionProjects/f2fs_tools/src/mount.c:2549: undefined reference to `dev_read_block'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: C:/Users/Professional/CLionProjects/f2fs_tools/src/mount.c:2557: undefined reference to `dev_write_block'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: CMakeFiles/f2fs_tools.dir/src/mount.c.obj: in function `flush_nat_journal_entries':
+C:/Users/Professional/CLionProjects/f2fs_tools/src/mount.c:2847: undefined reference to `dev_read_block'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: C:/Users/Professional/CLionProjects/f2fs_tools/src/mount.c:2853: undefined reference to `dev_write_block'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: CMakeFiles/f2fs_tools.dir/src/mount.c.obj: in function `find_next_free_block':
+C:/Users/Professional/CLionProjects/f2fs_tools/src/mount.c:3033: undefined reference to `dev_write_block'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: C:/Users/Professional/CLionProjects/f2fs_tools/src/mount.c:3042: undefined reference to `dev_read_block'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: CMakeFiles/f2fs_tools.dir/src/mount.c.obj: in function `move_one_curseg_info':
+C:/Users/Professional/CLionProjects/f2fs_tools/src/mount.c:3139: undefined reference to `dev_write_block'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: C:/Users/Professional/CLionProjects/f2fs_tools/src/mount.c:3154: undefined reference to `dev_read_block'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: CMakeFiles/f2fs_tools.dir/src/mount.c.obj: in function `nullify_nat_entry':
+C:/Users/Professional/CLionProjects/f2fs_tools/src/mount.c:3279: undefined reference to `dev_read_block'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: C:/Users/Professional/CLionProjects/f2fs_tools/src/mount.c:3292: undefined reference to `dev_write_block'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: CMakeFiles/f2fs_tools.dir/src/mount.c.obj: in function `duplicate_checkpoint':
+C:/Users/Professional/CLionProjects/f2fs_tools/src/mount.c:3319: undefined reference to `dev_read'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: C:/Users/Professional/CLionProjects/f2fs_tools/src/mount.c:3323: undefined reference to `dev_write'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: C:/Users/Professional/CLionProjects/f2fs_tools/src/mount.c:3329: undefined reference to `f2fs_fsync_device'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: CMakeFiles/f2fs_tools.dir/src/mount.c.obj: in function `write_checkpoint':
+C:/Users/Professional/CLionProjects/f2fs_tools/src/mount.c:3389: undefined reference to `dev_write_block'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: C:/Users/Professional/CLionProjects/f2fs_tools/src/mount.c:3405: undefined reference to `dev_write_block'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: C:/Users/Professional/CLionProjects/f2fs_tools/src/mount.c:3412: undefined reference to `dev_write_block'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: C:/Users/Professional/CLionProjects/f2fs_tools/src/mount.c:3423: undefined reference to `f2fs_fsync_device'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: C:/Users/Professional/CLionProjects/f2fs_tools/src/mount.c:3427: undefined reference to `dev_write_block'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: C:/Users/Professional/CLionProjects/f2fs_tools/src/mount.c:3430: undefined reference to `f2fs_fsync_device'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: CMakeFiles/f2fs_tools.dir/src/mount.c.obj: in function `write_raw_cp_blocks':
+C:/Users/Professional/CLionProjects/f2fs_tools/src/mount.c:3463: undefined reference to `dev_write_block'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: C:/Users/Professional/CLionProjects/f2fs_tools/src/mount.c:3468: undefined reference to `dev_write_block'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: CMakeFiles/f2fs_tools.dir/src/mount.c.obj: in function `build_nat_area_bitmap':
+C:/Users/Professional/CLionProjects/f2fs_tools/src/mount.c:3514: undefined reference to `dev_read_block'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: CMakeFiles/f2fs_tools.dir/src/mount.c.obj: in function `loop_node_chain_fix':
+C:/Users/Professional/CLionProjects/f2fs_tools/src/mount.c:3708: undefined reference to `dev_read_block'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: C:/Users/Professional/CLionProjects/f2fs_tools/src/mount.c:3713: undefined reference to `dev_read_block'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: C:/Users/Professional/CLionProjects/f2fs_tools/src/mount.c:3723: undefined reference to `dev_read_block'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: C:/Users/Professional/CLionProjects/f2fs_tools/src/mount.c:3731: undefined reference to `f2fs_io_type_to_rw_hint'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: C:/Users/Professional/CLionProjects/f2fs_tools/src/mount.c:3735: undefined reference to `dev_write_block'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: CMakeFiles/f2fs_tools.dir/src/mount.c.obj: in function `sanity_check_node_chain':
+C:/Users/Professional/CLionProjects/f2fs_tools/src/mount.c:3759: undefined reference to `dev_read_block'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: CMakeFiles/f2fs_tools.dir/src/mount.c.obj: in function `find_fsync_inode':
+C:/Users/Professional/CLionProjects/f2fs_tools/src/mount.c:3819: undefined reference to `dev_read_block'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: CMakeFiles/f2fs_tools.dir/src/mount.c.obj: in function `traverse_dnodes':
+C:/Users/Professional/CLionProjects/f2fs_tools/src/mount.c:3955: undefined reference to `dev_read_block'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: CMakeFiles/f2fs_tools.dir/src/mount.c.obj: in function `f2fs_sparse_initialize_meta':
+C:/Users/Professional/CLionProjects/f2fs_tools/src/mount.c:4224: undefined reference to `dev_fill'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: C:/Users/Professional/CLionProjects/f2fs_tools/src/mount.c:4238: undefined reference to `dev_fill'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: C:/Users/Professional/CLionProjects/f2fs_tools/src/mount.c:4250: undefined reference to `dev_fill'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: C:/Users/Professional/CLionProjects/f2fs_tools/src/mount.c:4262: undefined reference to `dev_fill'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: CMakeFiles/f2fs_tools.dir/src/node.c.obj: in function `f2fs_rebuild_qf_inode':
+C:/Users/Professional/CLionProjects/f2fs_tools/src/node.c:81: undefined reference to `f2fs_io_type_to_rw_hint'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: CMakeFiles/f2fs_tools.dir/src/node.c.obj: in function `get_dnode_of_data':
+C:/Users/Professional/CLionProjects/f2fs_tools/src/node.c:289: undefined reference to `f2fs_io_type_to_rw_hint'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: C:/Users/Professional/CLionProjects/f2fs_tools/src/node.c:289: undefined reference to `dev_write_block'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: C:/Users/Professional/CLionProjects/f2fs_tools/src/node.c:314: undefined reference to `dev_read_block'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: CMakeFiles/f2fs_tools.dir/src/resize.c.obj: in function `migrate_main':
+C:/Users/Professional/CLionProjects/f2fs_tools/src/resize.c:188: undefined reference to `dev_read_block'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: C:/Users/Professional/CLionProjects/f2fs_tools/src/resize.c:192: undefined reference to `f2fs_io_type_to_rw_hint'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: C:/Users/Professional/CLionProjects/f2fs_tools/src/resize.c:192: undefined reference to `dev_write_block'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: CMakeFiles/f2fs_tools.dir/src/resize.c.obj: in function `move_ssa':
+C:/Users/Professional/CLionProjects/f2fs_tools/src/resize.c:222: undefined reference to `dev_write_block'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: CMakeFiles/f2fs_tools.dir/src/resize.c.obj: in function `migrate_ssa':
+C:/Users/Professional/CLionProjects/f2fs_tools/src/resize.c:257: undefined reference to `dev_write_block'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: C:/Users/Professional/CLionProjects/f2fs_tools/src/resize.c:267: undefined reference to `dev_write_block'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: CMakeFiles/f2fs_tools.dir/src/resize.c.obj: in function `shrink_nats':
+C:/Users/Professional/CLionProjects/f2fs_tools/src/resize.c:313: undefined reference to `dev_read_block'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: CMakeFiles/f2fs_tools.dir/src/resize.c.obj: in function `migrate_nat':
+C:/Users/Professional/CLionProjects/f2fs_tools/src/resize.c:359: undefined reference to `dev_read_block'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: C:/Users/Professional/CLionProjects/f2fs_tools/src/resize.c:367: undefined reference to `dev_write_block'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: C:/Users/Professional/CLionProjects/f2fs_tools/src/resize.c:388: undefined reference to `dev_write_block'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: CMakeFiles/f2fs_tools.dir/src/resize.c.obj: in function `migrate_sit':
+C:/Users/Professional/CLionProjects/f2fs_tools/src/resize.c:414: undefined reference to `dev_write_block'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: C:/Users/Professional/CLionProjects/f2fs_tools/src/resize.c:433: undefined reference to `dev_write_block'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: C:/Users/Professional/CLionProjects/f2fs_tools/src/resize.c:448: undefined reference to `dev_write_block'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: CMakeFiles/f2fs_tools.dir/src/resize.c.obj:C:/Users/Professional/CLionProjects/f2fs_tools/src/resize.c:567: more undefined references to `dev_write_block' follow
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: CMakeFiles/f2fs_tools.dir/src/resize.c.obj: in function `rebuild_checkpoint':
+C:/Users/Professional/CLionProjects/f2fs_tools/src/resize.c:579: undefined reference to `dev_read_block'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: C:/Users/Professional/CLionProjects/f2fs_tools/src/resize.c:582: undefined reference to `dev_write_block'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: C:/Users/Professional/CLionProjects/f2fs_tools/src/resize.c:590: undefined reference to `dev_write_block'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: C:/Users/Professional/CLionProjects/f2fs_tools/src/resize.c:596: undefined reference to `dev_write_block'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: C:/Users/Professional/CLionProjects/f2fs_tools/src/resize.c:605: undefined reference to `dev_write_block'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: CMakeFiles/f2fs_tools.dir/src/segment.c.obj: in function `ADDRS_PER_PAGE':
+C:/Users/Professional/CLionProjects/f2fs_tools/src/node.h:42: undefined reference to `dev_read_block'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: CMakeFiles/f2fs_tools.dir/src/segment.c.obj: in function `f2fs_quota_size':
+C:/Users/Professional/CLionProjects/f2fs_tools/src/segment.c:165: undefined reference to `dev_read_block'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: CMakeFiles/f2fs_tools.dir/src/segment.c.obj: in function `f2fs_read':
+C:/Users/Professional/CLionProjects/f2fs_tools/src/segment.c:197: undefined reference to `dev_read_block'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: C:/Users/Professional/CLionProjects/f2fs_tools/src/segment.c:199: undefined reference to `S_ISLNK'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: C:/Users/Professional/CLionProjects/f2fs_tools/src/segment.c:235: undefined reference to `dev_read_block'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: C:/Users/Professional/CLionProjects/f2fs_tools/src/segment.c:239: undefined reference to `dev_read_block'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: CMakeFiles/f2fs_tools.dir/src/segment.c.obj: in function `f2fs_write_ex':
+C:/Users/Professional/CLionProjects/f2fs_tools/src/segment.c:301: undefined reference to `dev_read_block'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: C:/Users/Professional/CLionProjects/f2fs_tools/src/segment.c:303: undefined reference to `S_ISLNK'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: C:/Users/Professional/CLionProjects/f2fs_tools/src/segment.c:332: undefined reference to `f2fs_io_type_to_rw_hint'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: C:/Users/Professional/CLionProjects/f2fs_tools/src/segment.c:332: undefined reference to `dev_write_block'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: C:/Users/Professional/CLionProjects/f2fs_tools/src/segment.c:362: undefined reference to `dev_read_block'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: C:/Users/Professional/CLionProjects/f2fs_tools/src/segment.c:372: undefined reference to `f2fs_io_type_to_rw_hint'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: C:/Users/Professional/CLionProjects/f2fs_tools/src/segment.c:372: undefined reference to `dev_write_block'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: C:/Users/Professional/CLionProjects/f2fs_tools/src/segment.c:383: undefined reference to `f2fs_io_type_to_rw_hint'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: C:/Users/Professional/CLionProjects/f2fs_tools/src/segment.c:383: undefined reference to `dev_write_block'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: C:/Users/Professional/CLionProjects/f2fs_tools/src/segment.c:398: undefined reference to `f2fs_io_type_to_rw_hint'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: C:/Users/Professional/CLionProjects/f2fs_tools/src/segment.c:398: undefined reference to `dev_write_block'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: CMakeFiles/f2fs_tools.dir/src/segment.c.obj: in function `f2fs_filesize_update':
+C:/Users/Professional/CLionProjects/f2fs_tools/src/segment.c:451: undefined reference to `dev_read_block'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: C:/Users/Professional/CLionProjects/f2fs_tools/src/segment.c:453: undefined reference to `S_ISLNK'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: CMakeFiles/f2fs_tools.dir/src/segment.c.obj: in function `update_largest_extent':
+C:/Users/Professional/CLionProjects/f2fs_tools/src/segment.c:550: undefined reference to `dev_read_block'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: CMakeFiles/f2fs_tools.dir/src/segment.c.obj: in function `f2fs_build_file':
+C:/Users/Professional/CLionProjects/f2fs_tools/src/segment.c:646: undefined reference to `dev_read_block'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: CMakeFiles/f2fs_tools.dir/src/segment.c.obj: in function `update_block':
+C:/Users/Professional/CLionProjects/f2fs_tools/src/segment.c:776: undefined reference to `dev_write_block'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: C:/Users/Professional/CLionProjects/f2fs_tools/src/segment.c:796: undefined reference to `f2fs_io_type_to_rw_hint'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: C:/Users/Professional/CLionProjects/f2fs_tools/src/segment.c:796: undefined reference to `dev_write_block'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: CMakeFiles/f2fs_tools.dir/src/xattr.c.obj: in function `read_all_xattrs':
+C:/Users/Professional/CLionProjects/f2fs_tools/src/xattr.c:45: undefined reference to `dev_read_block'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: CMakeFiles/f2fs_tools.dir/src/xattr.c.obj: in function `write_all_xattrs':
+C:/Users/Professional/CLionProjects/f2fs_tools/src/xattr.c:121: undefined reference to `dev_read_block'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: C:/Users/Professional/CLionProjects/f2fs_tools/src/xattr.c:131: undefined reference to `f2fs_io_type_to_rw_hint'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: C:/Users/Professional/CLionProjects/f2fs_tools/src/xattr.c:131: undefined reference to `dev_write_block'
+C:\Program Files\JetBrains\CLion 2024.1\bin\mingw\bin/ld.exe: CMakeFiles/f2fs_tools.dir/src/xattr.c.obj: in function `f2fs_setxattr':
+C:/Users/Professional/CLionProjects/f2fs_tools/src/xattr.c:174: undefined reference to `dev_read_block'
+collect2.exe: error: ld returned 1 exit status
+ninja: build stopped: subcommand failed.
