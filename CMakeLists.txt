@@ -3,6 +3,11 @@ project(f2fs_tools C)
 
 set(CMAKE_C_STANDARD 23)
 include(GNUInstallDirs)
+set(CMAKE_CXX_LINK_GROUP_USING_cross_refs_SUPPORTED TRUE)
+set(CMAKE_CXX_LINK_GROUP_USING_cross_refs
+        "LINKER:--start-group"
+        "LINKER:--end-group"
+)
 
 include_directories(
         ${PROJECT_SOURCE_DIR}/src
