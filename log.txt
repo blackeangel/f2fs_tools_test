@@ -11,3 +11,18 @@ AND t2.cod <= t1.cod
 ORDER BY t2.cod DESC) AS new_typenum INTO new_sostav1
 FROM new_sostav AS t1
 ORDER BY t1.blank_id, t1.cod;
+
+Step 4
+INSERT INTO test (blanck_id, cod, type, oper, element_def)
+SELECT 
+    t1.blanck_id, 
+    t2.cod, 
+    t2.type, 
+    t2.oper, 
+    t2.element_def
+FROM test AS t1
+INNER JOIN test AS t2 
+    ON t2.blanck_id = Mid(t1.element_def, 5)  -- Берём blanck_id из "см. blanck2"
+WHERE 
+    (SELECT COUNT(*) FROM test WHERE blanck_id = t1.blanck_id) = 1 
+    AND t1.element_def LIKE "см. *";
